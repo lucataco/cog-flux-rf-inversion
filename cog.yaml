@@ -1,0 +1,22 @@
+# Configuration for Cog ⚙️
+# Reference: https://cog.run/yaml
+
+build:
+  gpu: true
+  cuda: "12.1"
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.5.1"
+    - "torchvision"
+    - "diffusers==0.32.1"
+    - "transformers==4.47.1"
+    - "accelerate==1.2.1"
+    - "numpy==1.26.4"
+    - "peft==0.14.0"
+    - "protobuf==5.29.2"
+    - "sentencepiece==0.2.0"
+
+  run:
+    - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)" && chmod +x /usr/local/bin/pget
+
+predict: "predict.py:Predictor"
