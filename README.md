@@ -16,3 +16,11 @@ To run a prediction:
     cog predict -i image=@cat.png -i prompt="Portrait of a tiger"
 
 <table> <tr> <td><img src="cat.png" alt="Input" width="50%"></td> <td><img src="output.0.webp" alt="Output" width="50%"></td> </tr> </table>
+
+## License
+
+The code in this repository is licensed under the [Apache License 2.0](LICENSE).
+
+`pipeline_flux_rf_inversion.py` comes from [huggingface/diffusers](https://github.com/huggingface/diffusers), which is Apache 2.0.
+
+The model weights are not covered by this license. [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) is released under the [FLUX.1 [dev] Non-Commercial License](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md), which allows non-commercial use only. Check its terms before use.
